@@ -30,7 +30,6 @@ export class InfoPaginaService {
       .subscribe((resp: any[]) => {
         this.cargada++;
         this.equipo = resp;
-        console.log(this.equipo);
       });
   }
 }
