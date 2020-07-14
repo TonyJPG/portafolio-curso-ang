@@ -19,8 +19,10 @@ export class InfoPaginaService {
     this.http
       .get("assets/data/data-pagina.json")
       .subscribe((resp: InfoPagina) => {
-        this.cargada++;
-        this.info = resp;
+        setTimeout(() => {
+          this.cargada++;
+          this.info = resp;
+        }, 1000);
       });
   }
 
@@ -28,8 +30,10 @@ export class InfoPaginaService {
     this.http
       .get("https://angular-html-be371.firebaseio.com/equipo.json")
       .subscribe((resp: any[]) => {
-        this.cargada++;
-        this.equipo = resp;
+        setTimeout(() => {
+          this.cargada++;
+          this.equipo = resp;
+        }, 3000);
       });
   }
 }

@@ -8,7 +8,7 @@
     <a
       routerLink="/item/{{ producto.cod }}"
       class="rk-item ae-masonry__item animate__animated animate__fadeIn"
-      *ngFor="let producto of productoService.productos"
+      *ngFor="let producto of productoService.productosFiltrados"
     >
       <img src="assets/productos/{{ producto.url }}.jpg" alt="" />
       <div class="item-meta">
